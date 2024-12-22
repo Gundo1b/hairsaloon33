@@ -1,0 +1,114 @@
+.about {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards; /* Fade-in and move up animation */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-right {
+    flex-basis: 40%;
+    position: relative;
+    margin-bottom: 20px; /* Add spacing for stacked layout */
+  }
+  
+  .about-left {
+    flex-basis: 56%;
+  }
+  
+  .about-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth scale and shadow on hover */
+  }
+  
+  .about-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  .about h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffb6c1;
+    opacity: 0;
+    animation: fadeInText 1.5s ease 0.5s forwards; /* Fade-in animation with delay */
+  }
+  
+  .about h2 {
+    color: #ff9fad;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px 0;
+    max-width: 400px;
+    opacity: 0;
+    animation: fadeInText 1.5s ease 0.7s forwards; /* Fade-in animation with delay */
+  }
+  
+  .about p {
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInText 1.5s ease 0.9s forwards; /* Fade-in animation with delay */
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .about-right,
+    .about-left {
+      flex-basis: 100%; /* Full width for both sections */
+    }
+  
+    .about h2 {
+      font-size: 28px; /* Reduce heading size for mobile */
+    }
+  
+    .about p {
+      font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 24px; /* Further reduce heading size */
+    }
+  
+    .about p {
+      font-size: 12px; /* Smaller font for very small devices */
+    }
+  
+    .about-img {
+      border-radius: 8px; /* Slightly smaller border-radius */
+    }
+  }
+  

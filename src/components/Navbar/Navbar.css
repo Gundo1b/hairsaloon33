@@ -1,0 +1,117 @@
+nav {
+    width: 100%;
+    color: #ffb6c1;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: #fff; /* Ensure background is visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffb6c1;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.logo {
+    width: 99px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f88;
+}
+
+.btn {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #ff6f88;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none; /* Hidden by default for mobile */
+    }
+
+    nav ul.show {
+        display: flex; /* Show when toggled */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #ffb6c1;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: small; /* Adjust heading size */
+    }
+
+    .btn {
+        padding: 4px 8px; /* Smaller button */
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 80px; /* Smaller logo for very small screens */
+    }
+}

@@ -1,0 +1,72 @@
+/* Services.css */
+.our-services-section {
+   
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the images above each service */
+  .service-image {
+    width: 80px;  /* Set the size of the image */
+    height: 80px;
+    object-fit: cover;  /* Ensures the image fills the space without distortion */
+    border-radius: 50%;  /* Makes the image circular */
+    margin-bottom: 15px;  /* Adds space between the image and the title */
+    border: 2px solid #e91e63;  /* Optional: Adds a pink border around the image */
+  }
+  
+  .service-title {
+    font-size: 24px;
+    color: #e91e63;  /* Pink color */
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      margin-bottom: 20px;
+    }
+  }
+  

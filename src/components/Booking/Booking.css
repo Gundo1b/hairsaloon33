@@ -1,0 +1,81 @@
+.containerb {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: pink;
+    margin-bottom: 20px;
+  }
+  
+  .hairstyles {
+    margin-bottom: 20px;
+  }
+  
+  .hairstyle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .hairstyle-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hairstyle-info input {
+    margin-right: 10px;
+  }
+  
+  .hairstyle-price {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .total-cost {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: palevioletred;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: rgb(248, 160, 175);
+  }
+  
